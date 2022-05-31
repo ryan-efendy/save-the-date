@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i|Satisfy");
+body {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/65540/kraft.jpg");
+  background-repeat: repeat;
+  background-size: 500px 500px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  line-height: 1.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px white dotted;
+  transition: 0.3s;
+}
+a:hover {
+  border-bottom: 1px lightpink dotted;
+}
+
+p.subtitle {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+p {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: "Satisfy", cursive;
+  font-weight: normal;
+  font-size: 64px;
+  position: relative;
+}
+h1:before, h1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/65540/leaf.png");
+}
+h1:before {
+  left: 0;
+}
+h1:after {
+  right: 0;
+  transform: scale(-1, 1);
+}
+h1 em {
+  font-style: normal;
+  display: block;
+  font-size: 40px;
+  line-height: 20px;
+}
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 48px;
+  }
+  h1:before, h1:after {
+    display: none;
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(0, -100%);
+  opacity: 0;
+  color: #856A4C;
+}
+aside.show {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(0);
+}
