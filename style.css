@@ -1,11 +1,9 @@
-/* @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i|Satisfy"); */
+/* default */
 body {
   background-image: url("img/mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
-  /* color: white;
-  font-family: "Montserrat", sans-serif; */
   text-align: center;
   line-height: 1.4;
   display: flex;
@@ -15,15 +13,19 @@ body {
   max-width: 100vw;
 }
 
+.atcb_initialized {
+  display: none;
+  margin-bottom: auto;
+  padding-top: 3%;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   body {
     background-image: url("img/mobile.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
-    /* color: white;
-    font-family: "Montserrat", sans-serif; */
     text-align: center;
     line-height: 1.4;
     display: flex;
@@ -39,10 +41,8 @@ body {
   body {
     background-image: url("img/tablet.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
-    /* color: white;
-    font-family: "Montserrat", sans-serif; */
     text-align: center;
     line-height: 1.4;
     display: flex;
@@ -58,10 +58,8 @@ body {
   body {
     background-image: url("img/desktop.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
-    /* color: white;
-    font-family: "Montserrat", sans-serif; */
     text-align: center;
     line-height: 1.4;
     display: flex;
@@ -77,10 +75,8 @@ body {
   body {
     background-image: url("img/large-desktop.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
-    /* color: white;
-    font-family: "Montserrat", sans-serif; */
     text-align: center;
     line-height: 1.4;
     display: flex;
